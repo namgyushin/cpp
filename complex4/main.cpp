@@ -24,6 +24,9 @@ int main()
 	c1 != c3;
 	
 	c1 += c2;
+
+	++c1;		// c1.operator++()
+	c2++;		// c2.operator++(int )
 	
 	const Complex c5 = c1 + c2;
 	// c5.real(3.0); 에러뜸

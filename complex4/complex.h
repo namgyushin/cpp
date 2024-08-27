@@ -35,6 +35,8 @@ class Complex
 		//const Complex operator/(const Complex& rhs) const;		//구현X
 		// % X
 		
+		const Complex& operator++();		// prefix
+		const Complex operator++(int );	// postfix
 		// ++, -- X
 		
 		bool operator==(const Complex& rhs) const;

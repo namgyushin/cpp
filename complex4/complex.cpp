@@ -36,6 +36,22 @@ const Complex Complex::operator+(const Complex& rhs) const
 	return result;
 }
 
+const Complex& Complex::operator++()
+{
+	re_ = re_ + 1;
+
+	return *this;
+}
+
+const Complex Complex::operator++(int )
+{
+	Complex tmp = *this;
+
+	re_ = re_ + 1;
+
+	return tmp;
+}
+
 double Complex::real() const
 {
 	return re_;
