@@ -48,6 +48,21 @@ const Rational Rational::operator+(const Rational& rhs) const
 	return result;
 }
 
+const Rational& Rational::operator++()
+{
+	num_ = num_ + den_;
+
+	return *this;
+}
+
+const Rational Rational::operator++(int)
+{
+	Rational tmp = *this;
+	num_ = num_ + den_;
+
+	return tmp;
+}
+
 int Rational::getNum() const
 {
 	return num_;

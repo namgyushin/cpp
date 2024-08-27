@@ -41,6 +41,9 @@ class Rational
 		
 		// ++, -- X
 		
+		const Rational& operator++();
+		const Rational operator++(int );
+
 		bool operator==(const Rational& rhs) const;
 		bool operator!=(const Rational& rhs) const;
 		//bool operator>(const Rational& rhs) const;					//구현X

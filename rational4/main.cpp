@@ -28,6 +28,9 @@ int main()
 	
 	r2 = r1 + r2;
 	r2 += r1;
+
+	r1++;
+	++r2;
 	
 	std::cout << "r1 : " << r1.getNum() << "/" <<r1.getDen() << std::endl;
 	std::cout << "r2 : " << r2 << std::endl;
