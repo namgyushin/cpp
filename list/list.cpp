@@ -87,7 +87,7 @@ void List::deleteNode(int data)
 	}
 }
 
-void List::printList()
+void List::print()
 {
 	Node *p = this->ptr->next;
 	std::cout <<"[";
