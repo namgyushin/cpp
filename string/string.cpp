@@ -39,7 +39,7 @@ String& String::operator=(const String& rhs)
     if (this != &rhs)   //self assignment test!     ex) s1 = s1;
     {
         delete [] str_;
-        str_= new char[rhs.len_];
+        str_= new char[rhs.len_ + 1];
         assert(str_);
         strcpy(str_, rhs.str_);
         len_ = rhs.len_;
