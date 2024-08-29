@@ -3,7 +3,7 @@
 int main()
 {
 	Empty e1;						//생성자
-	const Empty e2 = e1;		//복사
+	const Empty e2 = e1;			//복사
 	
 	e1 = e2;						//치환
 	
