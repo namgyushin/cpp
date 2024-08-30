@@ -20,8 +20,6 @@ std::istream& operator>>(std::istream& in, Complex& rhs)
 		{
 			in.clear(std::ios::failbit);
 		}
-		
-		
 	}
 	else
 	{
