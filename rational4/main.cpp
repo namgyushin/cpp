@@ -37,5 +37,13 @@ int main()
 	std::cout << "r3 : " << r3 << std::endl;
 	std::cout << "r4 : " << r4 << std::endl;
 
+
+	Rational r5;
+
+	std::cout << "input r5 : ";
+	std::cin >> r5;					//std::cin.operator>>(r5) X or operator>>(std::cin, r5)
+
+	std::cout << "r5 : " <<r5 << std::endl;
+
 	return 0;
 }
